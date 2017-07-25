@@ -1,4 +1,4 @@
-# 2015 Specimen Paper 2
+# 2015 Specimen Paper 2 - Python
 
 These files are Python files which complete the tasks specified (here)[http://www.cie.org.uk/programmes-and-qualifications/cambridge-igcse-computer-science-0478/past-papers/] on CIE's website.
 
