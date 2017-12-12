@@ -3,8 +3,11 @@ for i in range(30):
     student = [input("Input Name \n > ")]
     for x in range(3):
         while True:
-            inputVal = int(input("Test {} score \n > ".format(str(x + 1))))
-            if inputVal in range(maximum[x]): break
+            try:
+                inputVal = int(input("Test {} score \n > ".format(str(x + 1))))
+                if inputVal in range(maximum[x]): break
+            except ValueError:
+                pass
         student.append(inputVal)
     names[i], test1[i] , test2[i] , test3[i] , total[i] = student[0] , student[1] , student[2] , student[3], student[1] + student[2] + student[3]
 for i in range(30): print("Name | Test 1 | Test 2 | Test 3 | Total \n {} | {} | {} | {} | {}".format(names[i], test1[i], test2[i], test3[i], total[i]))

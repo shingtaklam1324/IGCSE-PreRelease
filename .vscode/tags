@@ -1,0 +1,67 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MinimizeLength.py	../2015 Specimen Paper 2 - Python/MinimizeLength.py	1;"	kind:file	line:1
+PreRelease.py	../2015 Specimen Paper 2 - Python/PreRelease.py	1;"	kind:file	line:1
+PreReleaseTask1.py	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	1;"	kind:file	line:1
+PreReleaseTask2.py	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	1;"	kind:file	line:1
+PreReleaseTask3.py	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	1;"	kind:file	line:1
+inputVal	../2015 Specimen Paper 2 - Python/MinimizeLength.py	/^                inputVal = int(input("Test {} score \\n > ".format(str(x + 1))))$/;"	kind:variable	line:7
+maxIndex	../2015 Specimen Paper 2 - Python/MinimizeLength.py	/^maxIndex = total.index((sorted(total))[29])$/;"	kind:variable	line:14
+maxIndex	../2015 Specimen Paper 2 - Python/PreRelease.py	/^maxIndex = total.index(sortedTotal[29])$/;"	kind:variable	line:41
+maxIndex	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^maxIndex = total.index(sortedTotal[29])$/;"	kind:variable	line:36
+names	../2015 Specimen Paper 2 - Python/PreRelease.py	/^names = []$/;"	kind:variable	line:1
+names	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^names = []$/;"	kind:variable	line:1
+names	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^names = []$/;"	kind:variable	line:1
+names	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^names = []$/;"	kind:variable	line:1
+prerelease.py	../2018_MJ/prerelease.py	1;"	kind:file	line:1
+score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^    score = int(input("Test 1 Score:")) #Inputs again$/;"	kind:variable	line:14
+score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^    score = int(input("Test 2 Score:"))$/;"	kind:variable	line:20
+score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^    score = int(input("Test 3 Score:"))$/;"	kind:variable	line:26
+score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^  score = int(input("Test 1 Score:")) #Inputs a value for test1$/;"	kind:variable	line:11
+score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^  score = int(input("Test 2 Score:")) #Same as above$/;"	kind:variable	line:17
+score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^  score = int(input("Test 3 Score:"))#Same as above$/;"	kind:variable	line:23
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^    score = int(input("Test 1 Score:"))$/;"	kind:variable	line:13
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^    score = int(input("Test 2 Score:"))$/;"	kind:variable	line:19
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^    score = int(input("Test 3 Score:"))$/;"	kind:variable	line:25
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^  score = int(input("Test 1 Score:"))$/;"	kind:variable	line:10
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^  score = int(input("Test 2 Score:"))$/;"	kind:variable	line:16
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^  score = int(input("Test 3 Score:"))$/;"	kind:variable	line:22
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^    score = int(input("Test 1 Score:"))$/;"	kind:variable	line:13
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^    score = int(input("Test 2 Score:"))$/;"	kind:variable	line:19
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^    score = int(input("Test 3 Score:"))$/;"	kind:variable	line:25
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^  score = int(input("Test 1 Score:"))$/;"	kind:variable	line:10
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^  score = int(input("Test 2 Score:"))$/;"	kind:variable	line:16
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^  score = int(input("Test 3 Score:"))$/;"	kind:variable	line:22
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^    score = int(input("Test 1 Score:"))$/;"	kind:variable	line:13
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^    score = int(input("Test 2 Score:"))$/;"	kind:variable	line:19
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^    score = int(input("Test 3 Score:"))$/;"	kind:variable	line:25
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^  score = int(input("Test 1 Score:"))$/;"	kind:variable	line:10
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^  score = int(input("Test 2 Score:"))$/;"	kind:variable	line:16
+score	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^  score = int(input("Test 3 Score:"))$/;"	kind:variable	line:22
+sortedTotal	../2015 Specimen Paper 2 - Python/PreRelease.py	/^sortedTotal = sorted(total) #Duplicates and sorts the total score array$/;"	kind:variable	line:40
+sortedTotal	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^sortedTotal = sorted(total)$/;"	kind:variable	line:35
+student	../2015 Specimen Paper 2 - Python/MinimizeLength.py	/^    student = [input("Input Name \\n > ")]$/;"	kind:variable	line:3
+test1	../2015 Specimen Paper 2 - Python/PreRelease.py	/^test1 = []$/;"	kind:variable	line:2
+test1	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^test1 = []$/;"	kind:variable	line:2
+test1	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^test1 = []$/;"	kind:variable	line:2
+test1	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^test1 = []$/;"	kind:variable	line:2
+test2	../2015 Specimen Paper 2 - Python/PreRelease.py	/^test2 = []$/;"	kind:variable	line:3
+test2	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^test2 = []$/;"	kind:variable	line:3
+test2	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^test2 = []$/;"	kind:variable	line:3
+test2	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^test2 = []$/;"	kind:variable	line:3
+test3	../2015 Specimen Paper 2 - Python/PreRelease.py	/^test3 = []$/;"	kind:variable	line:4
+test3	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^test3 = []$/;"	kind:variable	line:4
+test3	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^test3 = []$/;"	kind:variable	line:4
+test3	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^test3 = []$/;"	kind:variable	line:4
+total	../2015 Specimen Paper 2 - Python/PreRelease.py	/^total = []$/;"	kind:variable	line:5
+total	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^total = []$/;"	kind:variable	line:5
+total	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^total = []$/;"	kind:variable	line:5
+total	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^total = []$/;"	kind:variable	line:5
+totalMarks	../2015 Specimen Paper 2 - Python/PreRelease.py	/^totalMarks = 0$/;"	kind:variable	line:6
+totalMarks	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^totalMarks = 0$/;"	kind:variable	line:6
+totalMarks	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^totalMarks = 0$/;"	kind:variable	line:6
+totalMarks	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^totalMarks = 0$/;"	kind:variable	line:6
