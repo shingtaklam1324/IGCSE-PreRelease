@@ -1,3 +1,5 @@
+# python3 testing.py | python3 prerelease.py
+
 import random
 import time
 
