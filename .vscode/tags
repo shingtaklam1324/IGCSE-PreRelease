@@ -4,20 +4,30 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ITERATIONS	../2018_MJ/run.py	/^ITERATIONS = 1$/;"	kind:variable	line:3
 MinimizeLength.py	../2015 Specimen Paper 2 - Python/MinimizeLength.py	1;"	kind:file	line:1
+NUM_COWS	../2018_MJ/testing.py	/^NUM_COWS = 1000$/;"	kind:variable	line:6
 PreRelease.py	../2015 Specimen Paper 2 - Python/PreRelease.py	1;"	kind:file	line:1
 PreReleaseTask1.py	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	1;"	kind:file	line:1
 PreReleaseTask2.py	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	1;"	kind:file	line:1
 PreReleaseTask3.py	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	1;"	kind:file	line:1
+cow_id	../2018_MJ/prerelease.py	/^            cow_id = input("Cow ID: ")$/;"	kind:variable	line:13
+cows	../2018_MJ/prerelease.py	/^    cows = {}$/;"	kind:variable	line:4
+current	../2018_MJ/prerelease.py	/^            current = cows.setdefault(cow_id, [])$/;"	kind:variable	line:14
+days	../2018_MJ/prerelease.py	/^        days = 0$/;"	kind:variable	line:41
 inputVal	../2015 Specimen Paper 2 - Python/MinimizeLength.py	/^                inputVal = int(input("Test {} score \\n > ".format(str(x + 1))))$/;"	kind:variable	line:7
 maxIndex	../2015 Specimen Paper 2 - Python/MinimizeLength.py	/^maxIndex = total.index((sorted(total))[29])$/;"	kind:variable	line:14
 maxIndex	../2015 Specimen Paper 2 - Python/PreRelease.py	/^maxIndex = total.index(sortedTotal[29])$/;"	kind:variable	line:41
 maxIndex	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^maxIndex = total.index(sortedTotal[29])$/;"	kind:variable	line:36
+max_vol	../2018_MJ/prerelease.py	/^    max_vol = 0.0$/;"	kind:variable	line:33
+max_vol_id	../2018_MJ/prerelease.py	/^    max_vol_id = ""$/;"	kind:variable	line:32
 names	../2015 Specimen Paper 2 - Python/PreRelease.py	/^names = []$/;"	kind:variable	line:1
 names	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^names = []$/;"	kind:variable	line:1
 names	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^names = []$/;"	kind:variable	line:1
 names	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^names = []$/;"	kind:variable	line:1
+num_cows	../2018_MJ/prerelease.py	/^    num_cows = int(input("Num of Cows: "))$/;"	kind:variable	line:6
 prerelease.py	../2018_MJ/prerelease.py	1;"	kind:file	line:1
+run.py	../2018_MJ/run.py	1;"	kind:file	line:1
 score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^    score = int(input("Test 1 Score:")) #Inputs again$/;"	kind:variable	line:14
 score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^    score = int(input("Test 2 Score:"))$/;"	kind:variable	line:20
 score	../2015 Specimen Paper 2 - Python/PreRelease.py	/^    score = int(input("Test 3 Score:"))$/;"	kind:variable	line:26
@@ -45,6 +55,7 @@ score	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^  score = int(input
 sortedTotal	../2015 Specimen Paper 2 - Python/PreRelease.py	/^sortedTotal = sorted(total) #Duplicates and sorts the total score array$/;"	kind:variable	line:40
 sortedTotal	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^sortedTotal = sorted(total)$/;"	kind:variable	line:35
 student	../2015 Specimen Paper 2 - Python/MinimizeLength.py	/^    student = [input("Input Name \\n > ")]$/;"	kind:variable	line:3
+test	../2018_MJ/testing.py	/^def test():$/;"	kind:function	line:24
 test1	../2015 Specimen Paper 2 - Python/PreRelease.py	/^test1 = []$/;"	kind:variable	line:2
 test1	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^test1 = []$/;"	kind:variable	line:2
 test1	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^test1 = []$/;"	kind:variable	line:2
@@ -57,6 +68,9 @@ test3	../2015 Specimen Paper 2 - Python/PreRelease.py	/^test3 = []$/;"	kind:vari
 test3	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^test3 = []$/;"	kind:variable	line:4
 test3	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^test3 = []$/;"	kind:variable	line:4
 test3	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^test3 = []$/;"	kind:variable	line:4
+test_with_cow_ids	../2018_MJ/testing.py	/^def test_with_cow_ids():$/;"	kind:function	line:10
+test_with_random_ids	../2018_MJ/testing.py	/^def test_with_random_ids():$/;"	kind:function	line:18
+testing.py	../2018_MJ/testing.py	1;"	kind:file	line:1
 total	../2015 Specimen Paper 2 - Python/PreRelease.py	/^total = []$/;"	kind:variable	line:5
 total	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^total = []$/;"	kind:variable	line:5
 total	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^total = []$/;"	kind:variable	line:5
@@ -65,3 +79,5 @@ totalMarks	../2015 Specimen Paper 2 - Python/PreRelease.py	/^totalMarks = 0$/;"	
 totalMarks	../2015 Specimen Paper 2 - Python/PreReleaseTask1.py	/^totalMarks = 0$/;"	kind:variable	line:6
 totalMarks	../2015 Specimen Paper 2 - Python/PreReleaseTask2.py	/^totalMarks = 0$/;"	kind:variable	line:6
 totalMarks	../2015 Specimen Paper 2 - Python/PreReleaseTask3.py	/^totalMarks = 0$/;"	kind:variable	line:6
+total_vol	../2018_MJ/prerelease.py	/^    total_vol = 0.0$/;"	kind:variable	line:21
+volume	../2018_MJ/prerelease.py	/^            volume = float(input("Volume of milk: "))$/;"	kind:variable	line:16

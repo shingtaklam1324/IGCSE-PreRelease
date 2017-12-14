@@ -4,16 +4,20 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-NUM_COWS	../prerelease.py	/^    NUM_COWS = 5$/;"	kind:variable	line:6
+ITERATIONS	../run.py	/^ITERATIONS = 1$/;"	kind:variable	line:3
+NUM_COWS	../testing.py	/^NUM_COWS = 1000$/;"	kind:variable	line:6
 cow_id	../prerelease.py	/^            cow_id = input("Cow ID: ")$/;"	kind:variable	line:13
-cow_ids	../testing.py	/^cow_ids = [123, 124, 125, 126, 127]$/;"	kind:variable	line:6
 cows	../prerelease.py	/^    cows = {}$/;"	kind:variable	line:4
 current	../prerelease.py	/^            current = cows.setdefault(cow_id, [])$/;"	kind:variable	line:14
 days	../prerelease.py	/^        days = 0$/;"	kind:variable	line:41
 max_vol	../prerelease.py	/^    max_vol = 0.0$/;"	kind:variable	line:33
 max_vol_id	../prerelease.py	/^    max_vol_id = ""$/;"	kind:variable	line:32
+num_cows	../prerelease.py	/^    num_cows = int(input("Num of Cows: "))$/;"	kind:variable	line:6
 prerelease.py	../prerelease.py	1;"	kind:file	line:1
 run.py	../run.py	1;"	kind:file	line:1
+test	../testing.py	/^def test():$/;"	kind:function	line:24
+test_with_cow_ids	../testing.py	/^def test_with_cow_ids():$/;"	kind:function	line:10
+test_with_random_ids	../testing.py	/^def test_with_random_ids():$/;"	kind:function	line:18
 testing.py	../testing.py	1;"	kind:file	line:1
 total_vol	../prerelease.py	/^    total_vol = 0.0$/;"	kind:variable	line:21
 volume	../prerelease.py	/^            volume = float(input("Volume of milk: "))$/;"	kind:variable	line:16
