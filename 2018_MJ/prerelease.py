@@ -3,12 +3,12 @@
 if __name__ == "__main__":
     cows = {}
 
-    NUM_COWS = 5
+    num_cows = int(input("Num of Cows: "))
 
     for i in range(14):
         print("Day {} {}".format(int(i / 2) + 1, "Morning" if i %
                                  2 == 0 else "Afternoon"))
-        for c in range(NUM_COWS):
+        for c in range(num_cows):
             # If cow is in dict, use current, otherwise insert new list
             cow_id = input("Cow ID: ")
             current = cows.setdefault(cow_id, [])
@@ -40,11 +40,11 @@ if __name__ == "__main__":
         # Count days where vol < 12
         days = 0
         for i in range(int(len(volumes) / 2)):
-            if (volumes[2*i] + volumes[2*i+1]) < 12:
-                days += 1
-        
+            try:
+                days += int((volumes[2 * i] + volumes[2 * i + 1]) < 12)
+            except IndexError:
+                days += int((volumes[2 * i]) < 12)
         if days >= 4:
             print("Cow {}".format(cow_id))
 
     print("Cow with the most milk: Cow {}".format(max_vol_id))
-    

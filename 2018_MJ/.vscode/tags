@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+NUM_COWS	../prerelease.py	/^    NUM_COWS = 5$/;"	kind:variable	line:6
+cow_id	../prerelease.py	/^            cow_id = input("Cow ID: ")$/;"	kind:variable	line:13
+cow_ids	../testing.py	/^cow_ids = [123, 124, 125, 126, 127]$/;"	kind:variable	line:6
+cows	../prerelease.py	/^    cows = {}$/;"	kind:variable	line:4
+current	../prerelease.py	/^            current = cows.setdefault(cow_id, [])$/;"	kind:variable	line:14
+days	../prerelease.py	/^        days = 0$/;"	kind:variable	line:41
+max_vol	../prerelease.py	/^    max_vol = 0.0$/;"	kind:variable	line:33
+max_vol_id	../prerelease.py	/^    max_vol_id = ""$/;"	kind:variable	line:32
+prerelease.py	../prerelease.py	1;"	kind:file	line:1
+run.py	../run.py	1;"	kind:file	line:1
+testing.py	../testing.py	1;"	kind:file	line:1
+total_vol	../prerelease.py	/^    total_vol = 0.0$/;"	kind:variable	line:21
+volume	../prerelease.py	/^            volume = float(input("Volume of milk: "))$/;"	kind:variable	line:16

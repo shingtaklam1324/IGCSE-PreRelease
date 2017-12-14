@@ -3,12 +3,27 @@
 import random
 import time
 
-cow_ids = [123, 124, 125, 126, 127]
+NUM_COWS = 1000
+print(NUM_COWS)
 
-random.seed(time.time())
-
-for i in range(14):
-    for cow_id in range(len(cow_ids)):
-        print(cow_ids[cow_id])
+# Test with a 
+def test_with_cow_ids():
+    cow_ids = list(range(0, NUM_COWS))
+    for _, cow_id in enumerate(cow_ids):
+        print(cow_id)
         print(random.random() * 12)
     random.shuffle(cow_ids)
+
+
+def test_with_random_ids():
+    for _ in range(NUM_COWS):
+        print(random.randint(0, NUM_COWS))
+        print(random.random() * 12)
+
+
+def test():
+    random.seed(time.time())
+    for i in range(14):
+        test_with_cow_ids()
+
+test()

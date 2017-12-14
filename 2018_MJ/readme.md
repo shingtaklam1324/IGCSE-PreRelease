@@ -4,5 +4,15 @@
 Test code with 
 
 ```bash
-python3 testing.py | python3 prerelease.py
+python3 run.py
 ```
+
+### Constants
+
+#### `run.py`
+
+`ITERATIONS` - Specifies the number of iterations to test the program for
+
+#### `testing.py`
+
+`NUM_COWS` - Specifies the number of cows
