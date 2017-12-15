@@ -15,9 +15,9 @@
             ]
         },
         {
-            "label": "Test All S100",
+            "label": "Test All S50",
             "type": "shell",
-            "command": "python3 test.py 100 fixed_cow_ids random_ids fixed_data invalid_volume invalid_cow_id",
+            "command": "python3 test.py 50 fixed_cow_ids random_ids fixed_data invalid_volume invalid_cow_id",
             "group": {
                 "kind": "build",
                 "isDefault": true

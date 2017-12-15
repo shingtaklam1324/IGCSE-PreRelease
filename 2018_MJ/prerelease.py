@@ -2,9 +2,10 @@
     2018 May/June CIE Comp Sci IGCSE Pre Release
 '''
 
-# Debug Purposes, Hides the prompt for input
+# Debug Purposes, Hides the prompt for input, cleaner STDOUT
 import sys
-HIDE_PROMPT = False if len(sys.argv) < 2 else (sys.argv[1] == "--hide_prompt")
+HIDE_PROMPT = False if len(sys.argv) < 2 else (
+    sys.argv[1] == "--suppress" or sys.argv[1] == "-s")
 
 
 def convert_input(

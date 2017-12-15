@@ -11,4 +11,4 @@ for _ in range(ITERATIONS):
     for test in sys.argv[2:]:
         print("\nTest: {}".format(test))
         os.system(
-            "python3 testing.py {} {} | python3 prerelease.py --hide_prompt".format(num_cows, test))
+            "python3 testing.py {} {} | python3 prerelease.py -s".format(num_cows, test))
