@@ -2,6 +2,7 @@
     2018 May/June CIE Comp Sci IGCSE Pre Release
 '''
 
+# Debug Purposes, Hides the prompt for input
 import sys
 HIDE_PROMPT = False if len(sys.argv) < 2 else (sys.argv[1] == "--hide_prompt")
 
