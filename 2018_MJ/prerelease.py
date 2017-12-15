@@ -1,48 +1,55 @@
 # 2018 May/June CIE Comp Sci IGCSE Pre Release
 
 
-def convert_input(prompt="", to=float, err_msg="Error parsing input", validation=None):
+def convert_input(
+        prompt="",
+        convert_to=float,
+        err_msg="Error parsing input",
+        validation=None):
+    '''
+        Converts the input into a different type and performs the validation
+        function on the result. Prints out the error if a ValueError occurs
+        or the validation fails
+    '''
+
+    # If no validation is provided, use a lambda that returns True
+    validation = validation or (lambda x: True)
+
     while 1:
         try:
-            value = to(input(prompt))
-            if validation is not None:
-                if validation(value):
-                    return value
-                else:
-                    print(err_msg)
-                    continue
-            else:
+            value = convert_to(input(prompt))
+            if validation(value):
                 return value
+            else:
+                print(err_msg)
+                continue
         except ValueError:
             print(err_msg)
             continue
 
-def is_gt_zero(num):
-    return num > 0
 
-if __name__ == "__main__":
-    cows = {}
+def main(cows):
+    ''' Main Function '''
 
     num_cows = convert_input(
         prompt="Number of cows: ",
-        to=int,
-        validation=is_gt_zero,
+        convert_to=int,
+        validation=lambda x: x > 0,
         err_msg="Invalid number of cows"
     )
 
     for i in range(14):
         print("\n\nDay {} {}\n".format(int(i / 2) + 1, "Morning" if i %
-                                 2 == 0 else "Afternoon"))
-        
-        for c in range(num_cows):
+                                       2 == 0 else "Afternoon"))
+        for _ in range(num_cows):
             # If cow is in dict, use current, otherwise insert new list
             cow_id = input("Cow ID: ")
             current = cows.setdefault(cow_id, [])
 
             volume = convert_input(
                 prompt="Volume: ",
-                to=float,
-                validation=is_gt_zero,
+                convert_to=float,
+                validation=lambda x: x > 0,
                 err_msg="Invalid Volume input"
             )
 
@@ -83,3 +90,5 @@ if __name__ == "__main__":
     print("\nCow with the most milk: Cow {}".format(max_vol_id))
 
     # print(cows)
+
+main({})
