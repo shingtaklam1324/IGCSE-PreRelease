@@ -9,10 +9,6 @@ python3 run.py
 
 ### Constants
 
-#### `run.py`
+#### `test.py`
 
 `ITERATIONS` - Specifies the number of iterations to test the program for
-
-#### `testing.py`
-
-`NUM_COWS` - Specifies the number of cows

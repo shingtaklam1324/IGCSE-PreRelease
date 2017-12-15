@@ -4,20 +4,17 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ITERATIONS	../run.py	/^ITERATIONS = 1$/;"	kind:variable	line:3
-NUM_COWS	../testing.py	/^NUM_COWS = 1000$/;"	kind:variable	line:6
-cow_id	../prerelease.py	/^            cow_id = input("Cow ID: ")$/;"	kind:variable	line:13
-cows	../prerelease.py	/^    cows = {}$/;"	kind:variable	line:4
-current	../prerelease.py	/^            current = cows.setdefault(cow_id, [])$/;"	kind:variable	line:14
-days	../prerelease.py	/^        days = 0$/;"	kind:variable	line:41
-max_vol	../prerelease.py	/^    max_vol = 0.0$/;"	kind:variable	line:33
-max_vol_id	../prerelease.py	/^    max_vol_id = ""$/;"	kind:variable	line:32
-num_cows	../prerelease.py	/^    num_cows = int(input("Num of Cows: "))$/;"	kind:variable	line:6
+ITERATIONS	../test.py	/^ITERATIONS = 1$/;"	kind:variable	line:7
+NUM_COWS	../testing.py	/^NUM_COWS = int(sys.argv[1])$/;"	kind:variable	line:8
+convert_input	../prerelease.py	/^def convert_input($/;"	kind:function	line:7
+fixed_cow_ids	../testing.py	/^def fixed_cow_ids(cow_ids):$/;"	kind:function	line:12
+fixed_data	../testing.py	/^def fixed_data(cow_ids):$/;"	kind:function	line:27
+invalid_cow_id	../testing.py	/^def invalid_cow_id(cow_ids):$/;"	kind:function	line:45
+invalid_volume	../testing.py	/^def invalid_volume(cow_ids):$/;"	kind:function	line:35
+main	../prerelease.py	/^def main(cows):$/;"	kind:function	line:32
+num_cows	../test.py	/^    num_cows = sys.argv[1]$/;"	kind:variable	line:10
 prerelease.py	../prerelease.py	1;"	kind:file	line:1
-run.py	../run.py	1;"	kind:file	line:1
-test	../testing.py	/^def test():$/;"	kind:function	line:24
-test_with_cow_ids	../testing.py	/^def test_with_cow_ids():$/;"	kind:function	line:10
-test_with_random_ids	../testing.py	/^def test_with_random_ids():$/;"	kind:function	line:18
+random_ids	../testing.py	/^def random_ids(_):$/;"	kind:function	line:20
+test	../testing.py	/^def test():$/;"	kind:function	line:55
+test.py	../test.py	1;"	kind:file	line:1
 testing.py	../testing.py	1;"	kind:file	line:1
-total_vol	../prerelease.py	/^    total_vol = 0.0$/;"	kind:variable	line:21
-volume	../prerelease.py	/^            volume = float(input("Volume of milk: "))$/;"	kind:variable	line:16
