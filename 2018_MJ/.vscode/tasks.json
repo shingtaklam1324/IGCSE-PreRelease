@@ -2,15 +2,209 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "test",
+    "tasks": [{
+            "label": "Test All S10",
             "type": "shell",
-            "command": "python3 run.py",
+            "command": "python3 test.py 10 fixed_cow_ids random_ids fixed_data invalid_volume invalid_cow_id",
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test All S100",
+            "type": "shell",
+            "command": "python3 test.py 100 fixed_cow_ids random_ids fixed_data invalid_volume invalid_cow_id",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Fixed Cow IDs S50",
+            "type": "shell",
+            "command": "python3 test.py 50 fixed_cow_ids",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Random IDs S50",
+            "type": "shell",
+            "command": "python3 test.py 50 random_ids",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Fixed Data S50",
+            "type": "shell",
+            "command": "python3 test.py 50 fixed_data",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Invalid Volume S50",
+            "type": "shell",
+            "command": "python3 test.py 50 invalid_volume",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Invalid Cow ID S50",
+            "type": "shell",
+            "command": "python3 test.py 50 invalid_cow_id",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Fixed Cow IDs S100",
+            "type": "shell",
+            "command": "python3 test.py 100 fixed_cow_ids",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Random IDs S100",
+            "type": "shell",
+            "command": "python3 test.py 100 random_ids",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Fixed Data S100",
+            "type": "shell",
+            "command": "python3 test.py 100 fixed_data",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Invalid Volume S100",
+            "type": "shell",
+            "command": "python3 test.py 100 invalid_volume",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Invalid Cow ID S100",
+            "type": "shell",
+            "command": "python3 test.py 100 invalid_cow_id",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Fixed Cow IDs S500",
+            "type": "shell",
+            "command": "python3 test.py 500 fixed_cow_ids",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Random IDs S500",
+            "type": "shell",
+            "command": "python3 test.py 500 random_ids",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Fixed Data S500",
+            "type": "shell",
+            "command": "python3 test.py 500 fixed_data",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Invalid Volume S500",
+            "type": "shell",
+            "command": "python3 test.py 500 invalid_volume",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Test Invalid Cow ID S500",
+            "type": "shell",
+            "command": "python3 test.py 500 invalid_cow_id",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }

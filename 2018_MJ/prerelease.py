@@ -2,23 +2,24 @@
     2018 May/June CIE Comp Sci IGCSE Pre Release
 '''
 
+import sys
+HIDE_PROMPT = False if len(sys.argv) < 2 else (sys.argv[1] == "--hide_prompt")
+
+
 def convert_input(
         prompt="",
         convert_to=float,
         err_msg="Error parsing input",
-        validation=None):
+        validation=(lambda x: True)):
     '''
         Converts the input into a different type and performs the validation
         function on the result. Prints out the error if a ValueError occurs
         or the validation fails
     '''
 
-    # If no validation is provided, use a lambda that returns True
-    validation = validation or (lambda x: True)
-
     while 1:
         try:
-            value = convert_to(input(prompt))
+            value = convert_to(input("" if HIDE_PROMPT else prompt))
             if validation(value):
                 return value
             else:
@@ -44,13 +45,18 @@ def main(cows):
                                        2 == 0 else "Afternoon"))
         for _ in range(num_cows):
             # If cow is in dict, use current, otherwise insert new list
-            cow_id = input("Cow ID: ")
+            cow_id = convert_input(
+                prompt="Cow ID: ",
+                convert_to=int,
+                validation=lambda x: (0 <= x < 1000),
+                err_msg="Invalid Cow ID"
+            )
             current = cows.setdefault(cow_id, [])
 
             volume = convert_input(
                 prompt="Volume: ",
                 convert_to=float,
-                validation=lambda x: x > 0,
+                validation=lambda x: x >= 0,
                 err_msg="Invalid Volume input"
             )
 
@@ -63,7 +69,6 @@ def main(cows):
 
     print("\n\n===== Results =====")
     print("\nTotal Volume: {} l".format(round(total_vol)))
-    # Average = total / num of cows
     print("Average Volume: {} l".format(round(total_vol / len(cows.keys()))))
 
     print("\nCows with < 12 l for 4+ days")
@@ -86,10 +91,10 @@ def main(cows):
                 days += int((volumes[2 * i]) < 12)
         days += 7 - int(len(volumes) / 2)
         if days >= 4:
-            print("Cow {}".format(cow_id))
+            print("Cow {}{}".format("0" * (3 - len(str(cow_id))), cow_id))
 
-    print("\nCow with the most milk: Cow {}".format(max_vol_id))
+    print("\nCow with the most milk: Cow {}{}".format(
+        "0" * (3 - len(str(max_vol_id))), max_vol_id))
 
-    # print(cows)
 
 main({})
