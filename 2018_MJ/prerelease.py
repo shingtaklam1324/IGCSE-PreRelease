@@ -1,5 +1,6 @@
-# 2018 May/June CIE Comp Sci IGCSE Pre Release
-
+'''
+    2018 May/June CIE Comp Sci IGCSE Pre Release
+'''
 
 def convert_input(
         prompt="",

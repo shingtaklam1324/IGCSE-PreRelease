@@ -1,3 +1,6 @@
+'''
+    Pipes outpur of testing.py into prerelease.py
+'''
 import os
 
 ITERATIONS = 1
