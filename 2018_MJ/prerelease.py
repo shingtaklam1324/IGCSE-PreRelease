@@ -18,7 +18,7 @@ def convert_input(
     while 1:
         try:
             value = convert_to(input("" if (len(sys.argv) > 1) and (
-                sys.argv[1] == "-s" or sys.argv[1] == "--suppressed") else prompt))
+                sys.argv[1] == "-s" or sys.argv[1] == "--suppressed") else ("\x1b[1;93m" + prompt + "\x1b[0m")))
             if validation(value):
                 return value
             else:
@@ -40,8 +40,8 @@ def main(cows):
     )
 
     for i in range(14):
-        print("\n\nDay {} {}\n".format(int(i / 2) + 1, "Morning" if i %
-                                       2 == 0 else "Afternoon"))
+        print("\x1b\n\nDay {} {}\n".format(int(i / 2) + 1, "Morning" if i %
+                                           2 == 0 else "Afternoon"))
         for _ in range(num_cows):
             # If cow is in dict, use current, otherwise insert new list
             cow_id = convert_input(
@@ -90,9 +90,10 @@ def main(cows):
                 days += int((volumes[2 * i]) < 12)
         days += 7 - int(len(volumes) / 2)
         if days >= 4:
-            print("Cow {}{}".format("0" * (3 - len(str(cow_id))), cow_id))
+            print("\x1b[31mCow {}{}\x1b[0m".format(
+                "0" * (3 - len(str(cow_id))), cow_id))
 
-    print("\nCow with the most milk: Cow {}{}".format(
+    print("\x1b[92m\nCow with the most milk: Cow {}{}\x1b[0m".format(
         "0" * (3 - len(str(max_vol_id))), max_vol_id))
 
 
