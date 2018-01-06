@@ -7,8 +7,9 @@ import sys
 ITERATIONS = 1
 
 for _ in range(ITERATIONS):
-    num_cows = sys.argv[1]
-    for test in sys.argv[2:]:
+    file_name = sys.argv[1]
+    num_cows = sys.argv[2]
+    for test in sys.argv[3:]:
         print("\nTest: {}".format(test))
         os.system(
-            "python3 testing.py {} {} | python3 prerelease.py -s".format(num_cows, test))
+            "python3 testing.py {} {} | python3 {}".format(num_cows, test, file_name))

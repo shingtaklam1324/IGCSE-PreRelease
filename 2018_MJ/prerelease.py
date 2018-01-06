@@ -17,8 +17,7 @@ def convert_input(
 
     while 1:
         try:
-            value = convert_to(input("" if (len(sys.argv) > 1) and (
-                sys.argv[1] == "-s") else ("\x1b[1;93m" + prompt + "\x1b[0m")))
+            value = convert_to(input("\x1b[1;93m" + prompt + "\x1b[0m"))
             if validation(value):
                 return value
             else:
