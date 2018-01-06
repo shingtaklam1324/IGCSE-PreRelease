@@ -18,7 +18,7 @@ def convert_input(
     while 1:
         try:
             value = convert_to(input("" if (len(sys.argv) > 1) and (
-                sys.argv[1] == "-s" or sys.argv[1] == "--suppressed") else ("\x1b[1;93m" + prompt + "\x1b[0m")))
+                sys.argv[1] == "-s") else ("\x1b[1;93m" + prompt + "\x1b[0m")))
             if validation(value):
                 return value
             else:
@@ -40,8 +40,8 @@ def main(cows):
     )
 
     for i in range(14):
-        print("\x1b\n\nDay {} {}\n".format(int(i / 2) + 1, "Morning" if i %
-                                           2 == 0 else "Afternoon"))
+        print("\x1b[1;97m\n\nDay {} {}\n\x1b[0m".format(int(i / 2) + 1, "Morning" if i %
+                                                        2 == 0 else "Afternoon"))
         for _ in range(num_cows):
             # If cow is in dict, use current, otherwise insert new list
             cow_id = convert_input(
@@ -50,7 +50,7 @@ def main(cows):
                 validation=lambda x: (0 <= x < 1000),
                 err_msg="Invalid Cow ID"
             )
-            current = cows.setdefault(cow_id, [])
+            current = cows.setdefault(cow_id, [0.0] * 14)
 
             volume = convert_input(
                 prompt="Volume: ",
@@ -59,18 +59,20 @@ def main(cows):
                 err_msg="Invalid Volume input"
             )
 
-            current.append(volume)
+            current[i] = volume
             cows[cow_id] = current
 
     total_vol = 0.0
     for cow in cows.values():
         total_vol += sum(cow)
 
-    print("\n\n===== Results =====")
-    print("\nTotal Volume: {} l".format(round(total_vol)))
-    print("Average Volume: {} l".format(round(total_vol / len(cows.keys()))))
+    print("\n\n\x1b[1;97m===== Results =====")
+    print("\nTotal Volume:\x1b[0m {} \x1b[1;97ml".format(
+        round(total_vol)))
+    print("Average Volume:\x1b[0m {} \x1b[1;97ml\x1b[0m".format(
+        round(total_vol / len(cows.keys()))))
 
-    print("\nCows with < 12 l for 4+ days")
+    print("\n\x1b[1;91mCows with < 12 l for 4+ days\x1b[0m")
 
     # Placeholder values
     max_vol_id = ""
@@ -83,17 +85,13 @@ def main(cows):
 
         # Count days where vol < 12
         days = 0
-        for i in range(int(len(volumes) / 2)):
-            try:
-                days += int((volumes[2 * i] + volumes[2 * i + 1]) < 12)
-            except IndexError:
-                days += int((volumes[2 * i]) < 12)
-        days += 7 - int(len(volumes) / 2)
+        for i in range(7):
+            days += int((volumes[2 * i] + volumes[2 * i + 1]) < 12)
         if days >= 4:
             print("\x1b[31mCow {}{}\x1b[0m".format(
                 "0" * (3 - len(str(cow_id))), cow_id))
 
-    print("\x1b[92m\nCow with the most milk: Cow {}{}\x1b[0m".format(
+    print("\x1b[1;92m\nCow with the most milk: Cow {}{}\x1b[0m".format(
         "0" * (3 - len(str(max_vol_id))), max_vol_id))
 
 
