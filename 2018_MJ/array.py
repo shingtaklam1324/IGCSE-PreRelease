@@ -6,19 +6,17 @@ def main():
         while 1:
             try:
                 value = to(input("\x1b[1;93m{}\x1b[0m".format(prompt)))
-                if not validation(value):
-                    print(err_msg)
-                    continue
+                if not validation(value): raise ValueError
                 return value
             except ValueError:
-                print(err_msg)
+                print("\x1b[1;91m{}\x1b[0m".format(err_msg))
                 continue
 
     num_cows = convert("Number of Cows: ", int,
                        "Invalid input", lambda x: 0 <= x <= 1000)
 
     for time in range(14):
-        print("\x1b[1;97mDay {} {}\x1b[0m".format(int(time / 2), "Morning" if time %
+        print("\n\x1b[1;97mDay {} {}\x1b[0m".format(int(time / 2) + 1, "Morning" if time %
                                  2 == 0 else "Afternoon"))
         for _ in range(num_cows):
             cow_id = convert("Cow ID: ", int, "Invalid input",
@@ -41,7 +39,7 @@ def main():
             print("\x1b[31mCow {}{}\x1b[0m".format("0" * (3 - len(str(cow_id))), cow_id))
 
     idx = cows.index(max(cows, key=(lambda x: sum(x[:14]) * x[14])))
-    
+
     print("\n\x1b[1;92mCow with the most milk\x1b[0m")
     print("\x1b[32mCow {}{}\x1b[0m".format("0" * (3 - len(str(idx))), idx))
 main()
