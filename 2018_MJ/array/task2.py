@@ -44,7 +44,7 @@ def main():
 
     print("\n\n\x1b[1;97mResults")
     print("Total:\x1b[0m {} \x1b[1;97ml".format(round(total)))
-        print("Averages:\x1b[0m")
+    print("Averages:\x1b[0m")
     for cow_id, cow in enumerate(cows):
         if cow[14]:
             print(round(sum(cow[:14]) / 14))
