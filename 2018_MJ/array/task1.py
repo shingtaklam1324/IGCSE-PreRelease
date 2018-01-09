@@ -47,7 +47,7 @@ def main():
     # print("Averages:\x1b[0m")
     # for cow_id, cow in enumerate(cows):
     #     if cow[14]:
-    #         print(round(sum(cow[:14])))
+    #         print(round(sum(cow[:14] / 14)))
 
     # print("\n\x1b[1;91mCows with < 12 l for 4+ days\x1b[0m")
     # # Get a tuple of (cow_id, volumes)
