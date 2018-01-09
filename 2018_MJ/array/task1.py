@@ -44,7 +44,10 @@ def main():
 
     # print("\n\n\x1b[1;97mResults")
     # print("Total:\x1b[0m {} \x1b[1;97ml".format(round(total)))
-    # print("Average:\x1b[0m {} \x1b[1;97ml".format(round(total / num_cows)))
+    # print("Averages:\x1b[0m")
+    # for cow_id, cow in enumerate(cows):
+    #     if cow[14]:
+    #         print(round(sum(cow[:14])))
 
     # print("\n\x1b[1;91mCows with < 12 l for 4+ days\x1b[0m")
     # # Get a tuple of (cow_id, volumes)
