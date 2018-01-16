@@ -2,7 +2,7 @@
     2018 May/June CIE Comp Sci IGCSE Pre Release
 '''
 
-from typing import *
+from typing import List, TypeVar, Callable
 
 # Generic Number Type
 N = TypeVar('N')

@@ -1,6 +1,8 @@
 '''
     2018 May/June CIE Comp Sci IGCSE Pre Release
 '''
+
+
 def main():
     ''' Main Function '''
 
@@ -38,7 +40,7 @@ def main():
             cows[cow_id][time] = volume
             # Set [14] to 1, so there is an input
             cows[cow_id][14] = 1
-    
+
     # Only first 14 are wanted, [14] is the has input bit
     total = sum(map(lambda x: sum(x[:14]), cows))
 
