@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''
     Pipes output of testing.py into prerelease.py
 '''
