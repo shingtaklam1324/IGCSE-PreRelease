@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''
     2018 May/June CIE Comp Sci IGCSE Pre Release
 '''
