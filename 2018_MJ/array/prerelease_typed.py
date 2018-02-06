@@ -1,19 +1,35 @@
+#!/usr/local/bin/python3.7
 '''
     2018 May/June CIE Comp Sci IGCSE Pre Release
 '''
 
 from typing import List, TypeVar, Callable
+import sys
+import signal
+import gc
+
+def c_c(_signal, _frame):
+    '''
+    Handler for SIGINT
+    '''
+    print("\n\x1b[91;1mSIGINT\nCleaning Up\x1b[0m")
+    gc.collect()
+    sys.exit(1)
+
+
+signal.signal(signal.SIGINT, c_c)
 
 # Generic Number Type
 N = TypeVar('N')
 
 
 def main():
-    ''' Main Function '''
-
+    '''
+    Main
+    '''
     cows: List[List[int]] = [[0.0 for i in range(15)] for j in range(1000)]
 
-    def convert(prompt: str, convert_to: Callable[[str], N], err_msg: str, validation: Callable[[N], bool]) -> N:
+    def convert(prompt: str, convert_to: Callable[[str], N], err_msg: str, validation: Callable[[N], bool] = lambda _: True) -> N:
         '''
         Converts the input into a different type and performs the validation
         function on the result. Prints out the error if a ValueError occurs
