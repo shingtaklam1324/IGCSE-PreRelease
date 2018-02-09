@@ -1,2 +1,3 @@
 # mypy
 mypy/
+.mypy_cache/
