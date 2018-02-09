@@ -27,6 +27,7 @@ def main():
     '''
     Main
     '''
+
     cows: List[List[int]] = [[0.0 for i in range(15)] for j in range(1000)]
 
     def convert(prompt: str, convert_to: Callable[[str], N], err_msg: str, validation: Callable[[N], bool] = lambda _: True) -> N:
